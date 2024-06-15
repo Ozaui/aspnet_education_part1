@@ -1,0 +1,10 @@
+@model List<Course>
+
+	@foreach(var item in Model){
+	<div id="course_@item.Id">
+		<p>Id = @item.Id</p>
+		<p>Title = @item.Title</p>
+		<p>Description = @item.Description</p>
+		<img src="~/img/@item.Image" alt="">
+	</div>
+	}
